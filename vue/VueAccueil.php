@@ -11,7 +11,7 @@
                             <th>Index</th>
                             <th>Nom</th>
                             <th>Prix</th>
-                            <th>Capitalisation</th>
+                            <th>ATH (All Time High)</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -19,9 +19,10 @@
                         foreach($listeCrypto as $crypto){
                             echo "<tr><td>" . $crypto["Id_cryptomonnaie"] . "</td>";
                             echo "<td>" . $crypto["nom"] . "</td>";
-                            echo "<td>" . $crypto["Prix"] . "</td>";
-                            echo "<td>" . $crypto["PrixMax"] . "</td></tr>";
+                            echo "<td>" . $crypto["Prix"] . " $</td>";
+                            echo "<td>" . $crypto["PrixMax"] . " $</td></tr>";
                           }  ?>
+                        
                     </tbody>
                 </table>
             </div>

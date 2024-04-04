@@ -6,10 +6,19 @@ CREATE TABLE utilisateur(
 );
 
 CREATE TABLE cryptomonnaie(
-   Id_cryptomonnaie INT PRIMARY KEY,
+   Id_cryptomonnaie INT,
    nom VARCHAR(50),
    Prix INT,
-   PrixMax INT
+   PrixMax INT,
+   PRIMARY KEY(Id_cryptomonnaie)
+);
+
+CREATE TABLE photo(
+   Id_photo INT,
+   cheminPhoto VARCHAR(50),
+   Id_cryptomonnaie INT NOT NULL,
+   PRIMARY KEY(Id_photo),
+   FOREIGN KEY(Id_cryptomonnaie) REFERENCES cryptomonnaie(Id_cryptomonnaie)
 );
 
 CREATE TABLE commentaire(
@@ -32,7 +41,6 @@ CREATE TABLE avoir(
    FOREIGN KEY(Id_cryptomonnaie) REFERENCES cryptomonnaie(Id_cryptomonnaie)
 );
 
-
 INSERT INTO utilisateur (mail, pseudo, mdp) 
 VALUES ('exemple1@mail.com', 'utilisateur1', 'motdepasse1');
 
@@ -42,7 +50,14 @@ VALUES (1,'Bitcoin', 50000, 55000),
        (3,'Solana', 200, 500),
        (4,'BNB',290,500),
        (5,'USDT',1,1.1);
-       
+
+INSERT INTO photo (Id_photo, cheminPhoto, Id_cryptomonnaie) VALUES
+(1, 'BTC.png', 1),
+(2, 'ETH.png', 2),
+(3, 'SOL.png', 3),
+(4, 'BNB.png', 4),
+(5, 'USDT.png', 5);
+
 
 
 
