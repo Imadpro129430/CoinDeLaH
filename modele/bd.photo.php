@@ -38,7 +38,8 @@ function getPhotoByIdP($Id_photo) {
 }
 
 
-// cette fonction 
+// cette fonction permet d'ajouter une photo 
+// cela pourra etre utiliser pour l'admin
 
 // function addPhoto($idP, $cheminP, $idR) {
 //     $resultat = -1;

@@ -52,11 +52,11 @@ VALUES (1,'Bitcoin', 50000, 55000),
        (5,'USDT',1,1.1);
 
 INSERT INTO photo (Id_photo, cheminPhoto, Id_cryptomonnaie) VALUES
-(1, 'BTC.png', 1),
-(2, 'ETH.png', 2),
-(3, 'SOL.png', 3),
-(4, 'BNB.png', 4),
-(5, 'USDT.png', 5);
+(1, 'img/BTC.png', 1),
+(2, 'img/ETH.png', 2),
+(3, 'img/SOL.png', 3),
+(4, 'img/BNB.png', 4),
+(5, 'img/USDT.png', 5);
 
 
 
