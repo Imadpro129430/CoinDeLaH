@@ -31,7 +31,8 @@
                                 <?php
 
                                 foreach ($photos as $photo): ?>
-                                    <img class="imgTableau" src="<?= $photo['cheminPhoto'] ?>" alt="<?= $crypto['nom'] ?>">
+                                    <img class="imgTable" src="<?= $photo['cheminPhoto'] ?>" alt="<?= $crypto['nom'] ?>"
+                                        style="width: 40px; height: 40px;margin-left: 12%">
                                 <?php endforeach; ?>
 
                             </td>
@@ -46,5 +47,13 @@
                 </tbody>
             </table>
         </div>
+        <h2>Les cryptomonnaie c'est quoi<h2>
+
+                <p>Elle fonctionne de façon décentralisée sans organe central de contrôle.
+                Un des principaux cas d'usage de cette technologie est dans le domaine des cryptos :
+                elle enregistre et met à jour, pour tous les participants,
+                les transactions de cryptos de manière sécurisée par une vérification cryptographique.</p>
+                
+
     </article>
 </main>
