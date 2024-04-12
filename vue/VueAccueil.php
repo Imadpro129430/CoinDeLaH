@@ -31,7 +31,7 @@
                                 <?php
 
                                 foreach ($photos as $photo): ?>
-                                    <img class="imgTable" src="<?= $photo['cheminPhoto'] ?>" alt="<?= $crypto['nom'] ?>"
+                                    <img src="<?= $photo['cheminPhoto'] ?>" alt="<?= $crypto['nom'] ?>"
                                         style="width: 40px; height: 40px;margin-left: 12%">
                                 <?php endforeach; ?>
 
