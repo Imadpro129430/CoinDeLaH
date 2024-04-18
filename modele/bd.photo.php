@@ -37,6 +37,22 @@ function getPhotoByIdP($Id_photo) {
     return $resultat;
 }
 
+function getPhotoById_Cryptomonnaie($Id_cryptomonnaie) {
+    $resultat = array();
+
+    try {
+        $cnx = connexionPDO();
+        $req = $cnx->prepare("select cheminPhoto from photo where Id_cryptomonnaie= :Id_cryptomonnaie ;");
+        $req->bindValue(':Id_cryptomonnaie', $Id_cryptomonnaie, PDO::PARAM_INT);
+        $req->execute();
+
+        $resultat = $req->fetch(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        print "Erreur !: " . $e->getMessage();
+        die();
+    }
+    return $resultat;
+}
 
 // cette fonction permet d'ajouter une photo 
 // cela pourra etre utiliser pour l'admin
