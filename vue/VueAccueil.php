@@ -29,7 +29,7 @@
                             <td>
 
                             
-                                <a href="./?action=crypto&Id_crypto=<?= $crypto["Id_cryptomonnaie"] ?>">
+                                <a href="./?action=crypto&Id_cryptomonnaie=<?= $crypto["Id_cryptomonnaie"] ?>">
                                     <?= $crypto["nom"] ?> <!-- Nom de la cryptomonnaie -->
                                     <?php
 

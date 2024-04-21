@@ -6,10 +6,11 @@ include "$racine/modele/bd.crypto.php";
 include_once "$racine/modele/bd.photo.php";
 
 // Récupérer le paramètre de l'URL pour déterminer quelle cryptomonnaie afficher
-$cryptomonnaie = $_GET['Id_cryptomonnaie'] ?? 'btc'; // Par défaut, afficher Bitcoin (btc)
+$Id_cryptomonnaie = $_GET["Id_cryptomonnaie"];
 
 
 $Crypto = getCryptoById($Id_cryptomonnaie);
+
 $LesPrix = getPrixById($Id_cryptomonnaie);
 $LesPrixMax = getPrixMaxById($Id_cryptomonnaie);
 $Lesnoms = getNomById($Id_cryptomonnaie);
