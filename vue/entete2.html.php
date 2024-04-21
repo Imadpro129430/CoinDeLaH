@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>coin de la hess</title>
  
+    <link rel="stylesheet" href="css/crypto.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
 
@@ -22,5 +23,6 @@
         <!-- Placer la barre de navigation ici -->
         <nav class="navbar">
             <a href="./?action=Favorie">Favoris</a>
+
         </nav>
     </header>
