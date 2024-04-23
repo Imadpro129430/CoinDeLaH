@@ -4,7 +4,7 @@ function controleurPrincipal($action){
     $lesActions = array();
     $lesActions["defaut"] = "accueil.php";
     $lesActions["crypto"] = "cryptoM.php";
-    $lesActions["favoris"] = "favorie.php";
+    $lesActions["ajout"] = "ajout.php";
 
 
 

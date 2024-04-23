@@ -1,7 +1,9 @@
 <?php
-if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
-    $racine = "..";
+
+if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__){
+    $racine="..";
 }
+
 include "$racine/modele/bd.crypto.php";
 include_once "$racine/modele/bd.photo.php";
 

@@ -1,8 +1,14 @@
+<?php
+include_once "../controleur/accueil.php";
+?>
 <main>
     <article>
         <div class="le-top-5">
             <p>Le top 5 des cryptomonnaie</p>
         </div>
+        <form action="vue/VueAjout.php" method="POST">
+        <input type="submit" value="Ajouter une cryptomonnaie">
+    </form>
         <div class="tableau">
 
             <table>
@@ -28,7 +34,7 @@
                             </td>
                             <td>
 
-                            
+
                                 <a href="./?action=crypto&Id_cryptomonnaie=<?= $crypto["Id_cryptomonnaie"] ?>">
                                     <?= $crypto["nom"] ?> <!-- Nom de la cryptomonnaie -->
                                     <?php
