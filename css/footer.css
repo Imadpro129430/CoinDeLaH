@@ -1,0 +1,53 @@
+/* Style du footer */
+footer {
+    margin-top: 12%;
+    background-color: #333;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+.logo {
+    width: 40px; /* Largeur du logo */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    margin-right: 10px; /* Marge à droite du logo */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-info p {
+    margin: 10px 0;
+}
+
+.footer-info a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
