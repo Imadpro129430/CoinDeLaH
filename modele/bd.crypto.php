@@ -18,6 +18,7 @@ function getCryptoById($Id_cryptomonnaie) {
     return $resultat;
 }
 
+
 function ajouterCryptomonnaie($Id_cryptomonnaie, $nom, $prix, $prixMax) {
     global $conn;
 
@@ -32,5 +33,4 @@ function ajouterCryptomonnaie($Id_cryptomonnaie, $nom, $prix, $prixMax) {
 
     return $conn->lastInsertId();
 }
-
 

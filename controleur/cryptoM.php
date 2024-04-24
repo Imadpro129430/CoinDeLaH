@@ -1,7 +1,9 @@
 <?php
+
 if ($_SERVER["SCRIPT_FILENAME"] == __FILE__) {
     $racine = "..";
 }
+
 include "$racine/modele/bd.crypto.php";
 include_once "$racine/modele/bd.photo.php";
 
@@ -10,6 +12,7 @@ $Id_cryptomonnaie = $_GET["Id_cryptomonnaie"];
 
 
 $Crypto = getCryptoById($Id_cryptomonnaie);
+
 $LesPhotos = getPhotoById_Cryptomonnaie($Id_cryptomonnaie);
 
 // appel du script de vue qui permet de gerer l'affichage des donnees
