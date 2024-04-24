@@ -54,23 +54,3 @@ function getPhotoById_Cryptomonnaie($Id_cryptomonnaie) {
     return $resultat;
 }
 
-// cette fonction permet d'ajouter une photo 
-// cela pourra etre utiliser pour l'admin
-
-// function addPhoto($idP, $cheminP, $idR) {
-//     $resultat = -1;
-//     try {
-//         $cnx = connexionPDO();
-
-//         $req = $cnx->prepare("insert into photo (idP, cheminP, idR) values(:idP,:cheminP,:idR)");
-//         $req->bindValue(':idP', $idP, PDO::PARAM_INT);
-//         $req->bindValue(':cheminP', $cheminP, PDO::PARAM_STR);
-//         $req->bindValue(':idR', $idR, PDO::PARAM_INT);
-
-//         $resultat = $req->execute();
-//     } catch (PDOException $e) {
-//         print "Erreur !: " . $e->getMessage();
-//         die();
-//     }
-//     return $resultat;
-// }

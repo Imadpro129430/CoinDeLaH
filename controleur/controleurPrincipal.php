@@ -5,6 +5,10 @@ function controleurPrincipal($action){
     $lesActions["defaut"] = "accueil.php";
     $lesActions["crypto"] = "cryptoM.php";
     $lesActions["AjouterCrypto"] = "AjouterCrypto.php";
+    $lesActions["mention"] = "mention.php";
+    $lesActions["deleteCrypto"] = "deleteCrypto.php";
+
+
     
 
 

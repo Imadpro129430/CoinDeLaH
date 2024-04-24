@@ -63,6 +63,10 @@
                             </td>
                             <td>
                                 <?= $crypto["PrixMax"] ?> $ 
+                                <form action="./?action=deleteCrypto" method="post">
+                                    <input type="hidden" name="Id_cryptomonnaie" value="<?= $crypto['Id_cryptomonnaie'] ?>">
+                                    <input type="submit" name="deleteCrypto"  value="Supprimer">
+                                </form>
                             </td>
                         </tr>
                     <?php endforeach; ?>

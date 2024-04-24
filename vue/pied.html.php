@@ -7,25 +7,13 @@
 
             <div class="footer-links">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Mention Legale</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./?action=defaut">Accueil</a></li>
+                    <li><a href="./?action=mention">Mention Legale</a></li>
                 </ul>
             </div>
-
-            <div class="footer-social">
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                </ul>
-            </div>
-
         </div>
 
         <div class="footer-info">
-            <p>&copy; 2024 Nom de l'entreprise. Tous droits réservés.</p>
-            <p><a href="#">Politique de confidentialité</a> | <a href="#">Conditions d'utilisation</a></p>
+            <p>&copy; 2024 Coin de la Hess. Tous droits réservés.</p>
         </div>
     </footer>

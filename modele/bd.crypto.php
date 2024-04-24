@@ -33,4 +33,13 @@ function ajouterCryptomonnaie($Id_cryptomonnaie, $nom, $prix, $prixMax) {
 
     return $conn->lastInsertId();
 }
+function DeleteCryptomonnaie($Id_cryptomonnaie) {
+    global $conn;
+
+    $conn = connexionPDO();
+    $sql = "DELETE FROM cryptomonnaie WHERE Id_cryptomonnaie = :Id_cryptomonnaie";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(":Id_cryptomonnaie", $Id_cryptomonnaie);
+    $stmt->execute();
+}
 
