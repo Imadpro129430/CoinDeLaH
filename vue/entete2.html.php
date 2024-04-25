@@ -20,9 +20,5 @@
             <a href="./?action=defaut"><img src="img/meta.png" class="logo" alt="logo de metamask"></a>
             <p class="coindelahess">Coin de la hess</p>
         </div>
-        <!-- Placer la barre de navigation ici -->
-        <nav class="navbar">
-            <a href="./?action=Favorie">Favoris</a>
 
-        </nav>
     </header>
