@@ -5,23 +5,21 @@
         </div>
 
         <h1>Ajouter une cryptomonnaie</h1>
-    <form action="./?action=AjouterCrypto" method="POST">
-        <label for="Id_cryptomonnaie">ID :</label>
-        <input type="text" id="Id_cryptomonnaie" name="Id_cryptomonnaie" required><br><br>
+        <form action="./?action=AjouterCrypto" method="POST">
+            <label for="Id_cryptomonnaie">ID :</label>
+            <input type="text" id="Id_cryptomonnaie" name="Id_cryptomonnaie" required><br><br>
 
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" required><br><br>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required><br><br>
 
-        <label for="Prix">Prix :</label>
-        <input type="text" id="Prix" name="Prix" required><br><br>
+            <label for="Prix">Prix :</label>
+            <input type="text" id="Prix" name="Prix" required><br><br>
 
-        <label for="PrixMax">PrixMax :</label>
-        <input type="text" id="PrixMax" name="PrixMax" required><br><br>
+            <label for="PrixMax">PrixMax :</label>
+            <input type="text" id="PrixMax" name="PrixMax" required><br><br>
 
-        <input type="submit" name="ajoutercrypto" value="Ajouter la cryptomonnaie">
-    </form>
-
-
+            <input type="submit" name="ajoutercrypto" value="Ajouter la cryptomonnaie">
+        </form>
         <div class="tableau">
 
             <table>
@@ -62,10 +60,22 @@
                                 <?= $crypto["Prix"] ?> $
                             </td>
                             <td>
-                                <?= $crypto["PrixMax"] ?> $ 
+                                <?= $crypto["PrixMax"] ?> $
                                 <form action="./?action=deleteCrypto" method="post">
                                     <input type="hidden" name="Id_cryptomonnaie" value="<?= $crypto['Id_cryptomonnaie'] ?>">
-                                    <input type="submit" name="deleteCrypto"  value="Supprimer">
+                                    <input type="submit" name="deleteCrypto" value="Supprimer">
+                                </form>
+                            </td>
+                            <td>
+                                <form action="./?action=Modifier" method="post">
+                                    <input type="hidden" name="Id_cryptomonnaie" value="<?= $crypto['Id_cryptomonnaie'] ?>">
+                                    <label for="nom">Nouveau nom:</label>
+                                    <input type="text" id="nom" name="nom" value="<?= $crypto['nom'] ?>">
+                                    <label for="Prix">Prix :</label>
+                                    <input type="text" id="Prix" name="Prix" value="<?= $crypto['Prix'] ?>">
+                                    <label for="PrixMax">PrixMax :</label>
+                                    <input type="text" id="PrixMax" name="PrixMax" value="<?= $crypto['PrixMax'] ?>">
+                                    <input type="submit" name="ModifierCryptomonnaie" value="Modifier">
                                 </form>
                             </td>
                         </tr>

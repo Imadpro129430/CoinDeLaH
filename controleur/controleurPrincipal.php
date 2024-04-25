@@ -7,6 +7,8 @@ function controleurPrincipal($action){
     $lesActions["AjouterCrypto"] = "AjouterCrypto.php";
     $lesActions["mention"] = "mention.php";
     $lesActions["deleteCrypto"] = "deleteCrypto.php";
+    $lesActions["Modifier"] = "Modifier.php";
+
 
 
     

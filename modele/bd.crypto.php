@@ -43,3 +43,16 @@ function DeleteCryptomonnaie($Id_cryptomonnaie) {
     $stmt->execute();
 }
 
+function modifierCryptomonnaie($Id_cryptomonnaie, $nom, $prix,$prixMax) {
+    global $conn;
+
+    $conn = connexionPDO();
+    $sql = "UPDATE cryptomonnaie SET nom = :nom, Prix = :Prix, PrixMax = :PrixMax WHERE Id_cryptomonnaie = :Id_cryptomonnaie";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(':Id_cryptomonnaie', $Id_cryptomonnaie);
+    $stmt->bindParam(':nom', $nom);
+    $stmt->bindParam(':Prix', $prix);
+    $stmt->bindParam(':PrixMax', $prixMax);
+    $stmt->execute();
+}
+
